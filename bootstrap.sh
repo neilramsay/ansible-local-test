@@ -1,9 +1,9 @@
 #!/bin/bash -ex
 
+PROJECT=${1:-ansible-local-test}
+
 sudo apt-get update &&
 sudo apt-get install python3-venv
-
-PROJECT=${1:-ansible-local-test}
 
 git clone https://github.com/neilramsay/${PROJECT}.git &&
 cd ${PROJECT} &&
