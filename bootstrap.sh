@@ -11,4 +11,4 @@ python3 -m venv .venv &&
 source .venv/bin/activate &&
 pip install --require-virtualenv --requirement requirements.txt
 
-ansible-playbook --connection=local --inventory-file inventory.yaml playbook.yaml
+ansible-playbook --inventory-file inventory.yaml playbook.yaml
