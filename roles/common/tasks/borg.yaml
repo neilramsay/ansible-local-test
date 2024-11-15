@@ -1,0 +1,5 @@
+- name: Install Borg
+  ansible.builtin.apt:
+    name: borgbackup
+    state: present
+    update_cache: true
